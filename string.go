@@ -10,7 +10,7 @@ func String(key string, defaults ...string) string {
 			return defaults[0]
 		}
 
-		if value, ok := defaultString[key]; !ok {
+		if value, ok := defaultString[key]; ok {
 			return value
 		}
 	}

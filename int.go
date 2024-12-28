@@ -13,7 +13,7 @@ func Int(key string, defaults ...int) int {
 			return defaults[0]
 		}
 
-		if value, ok := defaultInt[key]; !ok {
+		if value, ok := defaultInt[key]; ok {
 			return value
 		}
 	}
