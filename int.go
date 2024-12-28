@@ -5,6 +5,7 @@ import (
 	"strconv"
 )
 
+// Int returns the int value of env by the specified key
 func Int(key string, defaults ...int) int {
 	env, ok := os.LookupEnv(key)
 

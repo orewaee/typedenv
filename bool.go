@@ -5,6 +5,7 @@ import (
 	"strings"
 )
 
+// Bool returns the bool value of env by the specified key
 func Bool(key string, defaults ...bool) bool {
 	env, ok := os.LookupEnv(key)
 

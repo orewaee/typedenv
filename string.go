@@ -2,6 +2,7 @@ package typedenv
 
 import "os"
 
+// String returns the string value of env by the specified key
 func String(key string, defaults ...string) string {
 	env, ok := os.LookupEnv(key)
 
