@@ -6,6 +6,7 @@ var (
 	defaultBool     = make(map[string]bool)
 	defaultString   = make(map[string]string)
 	defaultInt      = make(map[string]int)
+	defaultInt64    = make(map[string]int64)
 	defaultDuration = make(map[string]time.Duration)
 )
 
@@ -22,6 +23,11 @@ func DefaultString(key string, value string) {
 // DefaultInt sets the global default value to the int env
 func DefaultInt(key string, value int) {
 	defaultInt[key] = value
+}
+
+// DefaultInt64 sets the global default value to the int env
+func DefaultInt64(key string, value int64) {
+	defaultInt64[key] = value
 }
 
 // DefaultDuration sets the global default value to the duration env
