@@ -28,3 +28,9 @@ If a default value is used many times, use global default values.
 ```go
 typedenv.DefaultBool("BOOL", true)
 ```
+
+You can also check the presence of a key in the environment or among default values.
+
+```go
+exists := typedenv.Lookup("KEY")
+```
